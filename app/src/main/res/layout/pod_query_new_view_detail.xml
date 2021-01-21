@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@mipmap/toolbar_bg"
+        android:theme="@style/ThemeOverlay.MyApp.ActionBar"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Query View"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/netcheck_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/internet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:text="Seems like you are not connected to the internet. Please reload to try again.!"
+            android:textColor="@color/grey_700"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_reload"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/reload"
+            android:padding="20dp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/nolayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/empty_bin_ico" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="No data to display"
+            android:textColor="@color/grey_900"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text=" Please go back and try again.!"
+            android:textColor="@color/grey_500"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/parent_qalayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/ad_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/black"
+                android:orientation="vertical"
+                android:padding="2dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/home_ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/analytics_bg2" />
+
+                <RelativeLayout
+                    android:id="@+id/ad_close_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:background="@drawable/button_rounded_close"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_ad_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="close"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/tv_ad_close"
+                        android:src="@mipmap/close_white"
+                        android:tint="@color/black" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ad_close"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right|top"
+                    android:padding="8dp"
+                    android:src="@mipmap/close_thin"
+                    android:tint="@color/red_700"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/answer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_anstit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:padding="5dp"
+                        android:text="Enter your Answer"
+                        android:textColor="@color/mds_bluegrey_800"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvclear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="sans-serif-light"
+                        android:padding="5dp"
+                        android:text="clear answer"
+                        android:textColor="@color/app_color2"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+
+                <EditText
+                    android:id="@+id/edt_answer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/answeredittext"
+                    android:fontFamily="sans-serif"
+                    android:gravity="left"
+                    android:hint="Type your answer here..."
+                    android:inputType="textMultiLine"
+                    android:isScrollContainer="true"
+                    android:minHeight="150dp"
+                    android:padding="10dp"
+                    android:textColor="@color/mds_bluegrey_800"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Enter your prescription here * "
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/prescribe_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/answeredittext"
+                        android:gravity="left"
+                        android:hint="Enter prescription details here"
+                        android:inputType="textMultiLine"
+                        android:minHeight="75dp"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tvprivate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Private diagnosis (Won't be displayed to the patient)"
+                        android:textColor="@color/mds_bluegrey_800"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/diagnosis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/answeredittext"
+                        android:gravity="left"
+                        android:hint="Enter a brief Private diagnosis"
+                        android:inputType="textMultiLine"
+                        android:padding="10dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/show_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:animateLayoutChanges="true"
+                    android:background="@drawable/layout_border_red"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/tv_show"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="Show more fields"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@mipmap/down" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ans_more_dets"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:id="@+id/extra_ans_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Probable causes"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/pb_cause"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/answeredittext"
+                            android:gravity="left"
+                            android:hint="Specify causes if any"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="14sp" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Investigations to be done"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/lab_t"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/answeredittext"
+                            android:gravity="left"
+                            android:hint="Specify if any investigations needs to be done"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Differential diagnosis"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/ddx"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/answeredittext"
+                            android:gravity="left"
+                            android:hint="What are the Differential diagnosis"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Probable diagnosis"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/pdx"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/answeredittext"
+                            android:gravity="left"
+                            android:hint="What are the Probable diagnosis"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Treatment plan"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/treatment_plan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/answeredittext"
+                            android:gravity="left"
+                            android:hint="Provide the Treatment plan"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Preventive measures"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/p_tips"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/answeredittext"
+                            android:gravity="left"
+                            android:hint="Specify Preventive measures"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:padding="5dp"
+                            android:text="Regarding follow up"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/followup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/answeredittext"
+                            android:gravity="left"
+                            android:hint="Specify follow up instructions if any"
+                            android:inputType="textMultiLine"
+                            android:padding="10dp"
+                            android:textColor="@color/mds_bluegrey_800"
+                            android:textSize="14sp" />
+
+
+                        <LinearLayout
+                            android:id="@+id/prescribe_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif"
+                                android:text="Add a prescription?"
+                                android:textColor="@color/mds_bluegrey_800"
+                                android:textSize="18sp"
+                                android:textStyle="bold"
+                                android:visibility="visible" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/btn_upload_pres"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/button_rounded"
+                                    android:gravity="center"
+                                    android:layout_centerVertical="true"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:text="Upload file"
+                                    android:visibility="gone"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white" />
+
+                                <Button
+                                    android:id="@+id/btn_write_pres"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_toRightOf="@+id/btn_upload_pres"
+                                    android:background="@drawable/button_rounded"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:text="Write Prescription"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Regarding follow up"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/show_less"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/grey_200"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:text="Show more details"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@mipmap/above" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/followup_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:checked="false"
+                    android:visibility="gone"
+                    android:text="Enable Free Followup" />
+
+                <LinearLayout
+                    android:id="@+id/remind_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/check_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Switch
+                            android:id="@+id/reminder_switch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:checked="false"
+                            android:text="" />
+
+                        <TextView
+                            android:id="@+id/tv_sw"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/reminder_switch"
+                            android:text="Notify me for a follow up reminder"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/days_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/edit_remind_days"
+                            android:text="After "
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/edit_remind_days"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/tv_sw"
+                            android:background="@drawable/answeredittext"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/edit_remind_days"
+                            android:text="days"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_done"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_rounded"
+                        android:elevation="10dp"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <Button
+                        android:id="@+id/btn_notanswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_border_blue"
+                        android:elevation="10dp"
+                        android:text="Not Answering"
+                        android:visibility="gone"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="25dp"
+                 android:layout_marginTop="15dp"
+                 android:orientation="vertical"
+                 android:padding="10dp"
+                 android:visibility="visible">
+
+                 <TextView
+                     android:id="@+id/tv_discc"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="sans-serif"
+                     android:text="Patient Feedback :"
+                     android:textColor="@color/mds_bluegrey_700"
+                     android:textSize="15sp"
+                     android:textStyle="italic" />
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dip"
+                     android:layout_marginTop="5dp"
+                     android:background="@color/grey_700" />
+
+
+                 <TextView
+                     android:id="@+id/tv_nocomm"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="center_vertical"
+                     android:layout_marginTop="10dp"
+                     android:fontFamily="sans-serif-light"
+                     android:gravity="center"
+                     android:text="No Feedback posted yet"
+                     android:textColor="@color/mds_bluegrey_700"
+                     android:textSize="15sp"
+                     android:textStyle="italic" />
+
+
+                 <LinearLayout
+                     android:id="@+id/comments_layout"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="vertical">
+
+                 </LinearLayout>
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:id="@+id/post_qases_layout"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="25dp"
+                 android:background="@color/white"
+                 android:descendantFocusability="beforeDescendants"
+                 android:elevation="5dp"
+                 android:focusableInTouchMode="true"
+                 android:orientation="vertical"
+                 android:padding="10dp">
+
+                 <TextView
+                     android:id="@+id/tv_ask_tit"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="25dp"
+                     android:layout_marginTop="10dp"
+                     android:fontFamily="sans-serif"
+                     android:text="Write a Reply"
+                     android:textColor="@color/mds_bluegrey_700"
+                     android:textSize="17dp"
+                     android:textStyle="bold"
+                     android:visibility="visible" />
+
+                 <View
+                     android:layout_width="match_parent"
+                     android:layout_height="0.5dip"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="100dp"
+                     android:layout_marginTop="2dp"
+                     android:background="@color/mds_bluegrey_700" />
+
+                 <TextView
+                     android:id="@+id/tvtit"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="25dp"
+                     android:layout_marginTop="5dp"
+                     android:fontFamily="sans-serif"
+                     android:text="Discuss medical cases with fellow icliniq doctors"
+                     android:textColor="@color/mds_bluegrey_800"
+                     android:textSize="14dp"
+                     android:textStyle="normal"
+                     android:visibility="gone" />
+
+                 <EditText
+                     android:id="@+id/edt_comment"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_centerHorizontal="true"
+                     android:layout_marginLeft="15dp"
+                     android:layout_marginRight="15dp"
+                     android:layout_marginTop="10dp"
+                     android:background="@drawable/edittext_border"
+                     android:fontFamily="sans-serif"
+                     android:gravity="left"
+                     android:hint="Type your reply here.."
+                     android:inputType="textMultiLine"
+                     android:isScrollContainer="true"
+                     android:minHeight="100dp"
+                     android:padding="10dp"
+                     android:textColor="@color/mds_bluegrey_700"
+                     android:textSize="15sp"
+                     android:textStyle="normal" />
+
+                 <Button
+                     android:id="@+id/btn_post_submit"
+                     android:layout_width="wrap_content"
+                     android:layout_height="37dp"
+                     android:layout_alignParentBottom="true"
+                     android:layout_centerHorizontal="true"
+                     android:layout_gravity="center"
+                     android:layout_marginTop="15dp"
+                     android:background="@drawable/button_rounded"
+                     android:fontFamily="sans-serif"
+                     android:gravity="center"
+                     android:paddingLeft="20dp"
+                     android:paddingRight="20dp"
+                     android:text="Submit"
+                     android:textAllCaps="false"
+                     android:textColor="@color/white"
+                     android:textSize="15sp"
+                     android:textStyle="bold" />
+
+             </LinearLayout>
+ -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="25dp"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_ansquery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight="1"
+        android:background="@drawable/button_rounded"
+        android:text="Answer Query"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

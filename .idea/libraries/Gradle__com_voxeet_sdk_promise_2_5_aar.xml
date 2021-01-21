@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.voxeet.sdk:promise:2.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/41b8b43664e1e8e24a5480423dd7ff34/jetified-promise-2.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/41b8b43664e1e8e24a5480423dd7ff34/jetified-promise-2.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/41b8b43664e1e8e24a5480423dd7ff34/jetified-promise-2.5/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/be5c9d0cd9b93aa40b74580e87f20e8d/jetified-promise-2.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/be5c9d0cd9b93aa40b74580e87f20e8d/jetified-promise-2.5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/be5c9d0cd9b93aa40b74580e87f20e8d/jetified-promise-2.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.voxeet.sdk/promise/2.5/742daec8dc709967d2fb56363f711e1bcc0ae49b/promise-2.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.voxeet.sdk/promise/2.5/57a59f19986f7c356017bed875595c63edf16315/promise-2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

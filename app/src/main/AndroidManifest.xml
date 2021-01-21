@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.orane.docassist">
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon">
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".Signup1"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".chime.InMeetingActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Signature_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".chime.MeetingHomeActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Chat_Prescription_Home"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".POD_Queries_Activity_New"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Voxeet_New"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Prescription_home"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Prescription_WebViewActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ExpandableActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Signup_MyCertificates_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Signup_MyCertificates_AddActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".Queries_Activity_New"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".POD_NewQueriesActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".POD_NewQueryViewActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".New_Main.New_MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Signup2"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Signup3"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".OTPActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Email_OTPActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <provider
+            android:name=".fileattach_library.ExtendedFileProvider"
+            android:authorities="${applicationId}.easyphotopicker.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <activity
+            android:name=".DeepLinkActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.icliniq.com"
+                    android:pathPrefix="/meeting"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DeepLink_resetpwd"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.icliniq.com"
+                    android:pathPrefix="/users"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <!--
+                <activity
+                    android:name="io.github.memfis19.annca.internal.ui.camera.Camera1Activity"
+                    android:screenOrientation="portrait"
+                    android:theme="@style/ThemeFullscreen" />
+                <activity
+                    android:name="io.github.memfis19.annca.internal.ui.preview.PreviewActivity"
+                    android:screenOrientation="portrait"
+                    android:theme="@style/ThemeFullscreen" />-->
+        <activity
+            android:name=".QR_Code_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Video_Description_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Video_WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Attached_List_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SentMsgActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Credentials_query_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Credentials_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".File_Browse"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Prescriptions_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Prescription_Entry_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Multiselect.ListViewExample"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MultiSpeciality_ListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Voxeet"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Profile_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Consultation_Activity_New"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Attachment_List_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--        <activity
+                    android:name=".Webrtc_Activity"
+                    android:theme="@style/AppTheme.NoActionBar" />-->
+        <activity
+            android:name=".Inbox_view"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Patient_Notes_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddNotesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Terms_WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyCertificates_AddActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyCertificates_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CommonActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QaseComment_Post2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyWalletActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SpecialityListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InviteDoctorActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QasesHome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Qases_Post1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Qases_View_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Qases_Post2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QasesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".attachment_view.DetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Attachment_WebViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".attachment_view.GridViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SendApptHome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NotificationViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyPatientActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgotPwdActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AnsweredQueryViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConsHistoryPatProfile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyPatientSendSlot"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Patient_Profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HotlineHome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Invite_Pat_To_Hotline"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyPatientAddActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HotlineFeeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ApptSendSlotThankyou"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SendApptSlot2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TimeZoneActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SendApptSlot1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyClinicAddActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MyClinicActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BookingViewDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WalletTransactions"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ThankyouActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewQueriesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AnsweredQueriesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UpcomingConsView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HotlineChatViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HotlinePatientsQueriesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HotlinePatientsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewQueryViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShareToFriends"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PayoutTransactions"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ConsHistoryView"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ReferDoctorActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cc53deb84851c3c6ee51f3c400c51e251432482b" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+                <service android:name=".MyFirebaseMessagingService">
+                    <intent-filter>
+                        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                    </intent-filter>
+                </service>-->
+
+    </application>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.wearable.permission.RECEIVE_COMPLICATION_DATA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

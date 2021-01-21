@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.voxeet.sdk:video:2.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1120678f4715f4b49774bdf98199979/jetified-video-2.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1120678f4715f4b49774bdf98199979/jetified-video-2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a1120678f4715f4b49774bdf98199979/jetified-video-2.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d9aa0c6855c1ce510ec53ed392e9ae63/jetified-video-2.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d9aa0c6855c1ce510ec53ed392e9ae63/jetified-video-2.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d9aa0c6855c1ce510ec53ed392e9ae63/jetified-video-2.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.voxeet.sdk/video/2.1/af5ee4bed5859bad9c14785692c1c7d4cc387c26/video-2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.voxeet.sdk/video/2.1/840fe86e282d5fdf4a29511061290b2cdf21d4b6/video-2.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

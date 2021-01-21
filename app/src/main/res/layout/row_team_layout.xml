@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.orane.docassist.Multiselect.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <!-- We dont want to be able to click the CheckBox -
+         android:clickable="false" added.
+         CheckableRelativeLayout takes care of the toggle when clicking the row -->
+    <CheckBox
+        android:id="@+id/myCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/customcheckbox_background"
+        android:button="@drawable/customcheckbox"
+        android:clickable="false"
+        android:focusable="false"
+        android:textColor="@color/app_color" />
+
+    <TextView
+        android:id="@+id/listview_TeamDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/myCheckBox"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:text="asdasdasdadasdasdasd"
+        android:textColor="@color/app_color"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/listview_TeamWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:paddingRight="5dp"
+        android:textColor="@color/app_color"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</com.orane.docassist.Multiselect.CheckableRelativeLayout>

@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.broakenmedia:MultiContactPicker:1.7@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bbd5d3cd1c3b128e6c217c2112bbba09/jetified-MultiContactPicker-1.7/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bbd5d3cd1c3b128e6c217c2112bbba09/jetified-MultiContactPicker-1.7/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bbd5d3cd1c3b128e6c217c2112bbba09/jetified-MultiContactPicker-1.7/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2a3383ee528a3450658063220d90b374/jetified-MultiContactPicker-1.7/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2a3383ee528a3450658063220d90b374/jetified-MultiContactPicker-1.7/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2a3383ee528a3450658063220d90b374/jetified-MultiContactPicker-1.7/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.broakenmedia/MultiContactPicker/1.7/8400baef761afb22907e91af47d0c8abc5bfe79d/MultiContactPicker-1.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

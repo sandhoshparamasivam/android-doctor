@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: :amazon-chime-sdk:@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a2773cdbf86b03576cce1ef40ea612eb/jetified-amazon-chime-sdk/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a2773cdbf86b03576cce1ef40ea612eb/jetified-amazon-chime-sdk/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a2773cdbf86b03576cce1ef40ea612eb/jetified-amazon-chime-sdk/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

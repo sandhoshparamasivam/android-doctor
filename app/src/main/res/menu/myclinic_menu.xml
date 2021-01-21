@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_addclinic"
+        android:icon="@mipmap/add_clinic"
+        android:orderInCategory="100"
+        android:title="Add Clinic"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_addpatients"
+        android:orderInCategory="100"
+        android:title="Add a Patient"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/nav_mypatients"
+        android:orderInCategory="100"
+        android:title="My Patients"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/nav_sendapptslot"
+        android:orderInCategory="100"
+        android:title="Send Appointment Slot"
+        app:showAsAction="never" />
+
+</menu>

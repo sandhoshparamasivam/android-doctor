@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Queries"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/nav_newqueries"
+                android:icon="@mipmap/query_new2"
+                android:title="New Queries" />
+
+            <item
+                android:id="@+id/nav_answered_queries"
+                android:icon="@mipmap/answered_icon"
+                android:title="Query History" />
+
+        </menu>
+    </item>
+
+    <group
+        android:checkableBehavior="single"
+        android:visible="false">
+
+        <item
+            android:id="@+id/nav_consultation"
+            android:icon="@mipmap/myicliniq"
+            android:title="Upcoming Consultations"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_hotline"
+            android:icon="@mipmap/hotline_icon"
+            android:title="Hotline" />
+
+    </group>
+
+    <item
+        android:checkableBehavior="single"
+        android:title="My Section">
+        <menu>
+            <item
+                android:id="@+id/mywallet"
+                android:icon="@mipmap/wallet_icon"
+                android:title="My Wallet" />
+
+            <item
+                android:id="@+id/nav_mycliniq"
+                android:icon="@mipmap/clinic_icon"
+                android:title="My Clinics" />
+
+            <item
+                android:id="@+id/nav_patients"
+                android:icon="@mipmap/pat_icon"
+                android:title="My Patients" />
+
+            <item
+                android:id="@+id/nav_myprofile"
+                android:icon="@mipmap/profile_icon"
+                android:title="My Profile" />
+
+            <item
+                android:id="@+id/nav_myvideos"
+                android:icon="@mipmap/pat_icon"
+                android:title="My Videos" />
+
+            <item
+                android:id="@+id/nav_sentmsg"
+                android:icon="@mipmap/sent_msg_icon"
+                android:title="Sent Messages" />
+
+            <item
+                android:id="@+id/nav_sendapptslot"
+                android:icon="@mipmap/appt_icon"
+                android:title="Send Appointment Slot" />
+        </menu>
+    </item>
+
+
+    <item
+        android:checkableBehavior="single"
+        android:title="Help">
+        <menu>
+            <item
+                android:id="@+id/impearming"
+                android:icon="@mipmap/tips"
+                android:title="Tips to improve earning" />
+
+            <item
+                android:id="@+id/anshuidlines"
+                android:icon="@mipmap/guid"
+                android:title="Answering guidelines" />
+        </menu>
+    </item>
+
+    <item
+        android:checkableBehavior="single"
+        android:title="Others">
+        <menu>
+
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@mipmap/settings_icon"
+                android:title="Settings" />
+
+            <item
+                android:id="@+id/nav_invite_doctors"
+                android:icon="@mipmap/doctor_grey"
+                android:title="Invite Doctors" />
+
+
+            <item
+                android:id="@+id/aboutus"
+                android:icon="@mipmap/aboutus"
+                android:title="About us" />
+
+            <item
+                android:id="@+id/contactus"
+                android:icon="@mipmap/contactus"
+                android:title="Contact us" />
+
+            <item
+                android:id="@+id/nav_csupport"
+                android:icon="@mipmap/support_blue"
+                android:title="Customer Support" />
+
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@mipmap/average"
+                android:title="Feedback"
+                android:visible="false" />
+
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@mipmap/share"
+                android:title="Share to friends"
+                android:visible="false" />
+
+            <item
+                android:id="@+id/rateus"
+                android:icon="@mipmap/ratting"
+                android:title="Rate us"
+                android:visible="false" />
+
+        </menu>
+    </item>
+
+</menu>

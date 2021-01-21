@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Subject"
+        android:textColor="@color/mds_bluegrey_900"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edt_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cons_query_text"
+        android:fontFamily="sans-serif-light"
+        android:hint="Enter subject here"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColor="@color/grey_900"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="message"
+        android:textColor="@color/mds_bluegrey_900"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/edt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/cons_query_text"
+        android:fontFamily="sans-serif-light"
+        android:gravity="left|top"
+        android:hint="Enter message here"
+        android:inputType="textMultiLine"
+        android:minHeight="100dp"
+        android:padding="10dp"
+        android:textColor="@color/grey_900"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

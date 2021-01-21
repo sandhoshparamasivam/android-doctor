@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.voxeet.sdk:audio:2.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a356948c255afe1dde27bb64f9656c9/jetified-audio-2.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a356948c255afe1dde27bb64f9656c9/jetified-audio-2.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/6a356948c255afe1dde27bb64f9656c9/jetified-audio-2.0.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ae8fb4045e694ccd8a8055b1b4e105d/jetified-audio-2.0.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ae8fb4045e694ccd8a8055b1b4e105d/jetified-audio-2.0.2/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4ae8fb4045e694ccd8a8055b1b4e105d/jetified-audio-2.0.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.voxeet.sdk/audio/2.0.2/fb3dfe911dd97f9cb82f6dff1f6068fd48927284/audio-2.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.voxeet.sdk/audio/2.0.2/fe067f1dfe2b9ae7b6ccdf2dfc69b609ad4463da/audio-2.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

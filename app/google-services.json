@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "59397985406",
+    "firebase_url": "https://ios-doctor-app.firebaseio.com",
+    "project_id": "ios-doctor-app",
+    "storage_bucket": "ios-doctor-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59397985406:android:9af605f1ba5e3e3f",
+        "android_client_info": {
+          "package_name": "com.orane.docassist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59397985406-ul584cg07nv6ds2lrbvtlp00dhiu3css.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.orane.docassist",
+            "certificate_hash": "b98a01ea67cbfe5dac3dfe02e37cfdc3387dcdde"
+          }
+        },
+        {
+          "client_id": "59397985406-uebok31sm5vbjjqdhg5j7vc7lpv3hdo0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.orane.docassist",
+            "certificate_hash": "3a0319d966d80f82208540b98a402267b781683c"
+          }
+        },
+        {
+          "client_id": "59397985406-gaui9c2eu6am7gim3r2n95bh7034iv1l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQsOaaMoQtSfP8HO1R4PxrajwQagRelFQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59397985406-gaui9c2eu6am7gim3r2n95bh7034iv1l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "59397985406-9fa3h09qn3t9hpeu1jg52e1h2m5gqlsf.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.orane.docassist",
+                "app_store_id": "1248343054"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_wallet"
+        android:orderInCategory="100"
+        android:title="Wallet"
+        android:icon="@mipmap/wallet_icon_small"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_ans_improve"
+        android:orderInCategory="100"
+        android:title="Tips to more Earning"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/nav_ansguide"
+        android:orderInCategory="100"
+        android:title="Answering Guidelines"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/ratenow"
+        android:orderInCategory="100"
+        android:title="Rate us"
+        android:icon="@mipmap/ratting"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/csupport"
+        android:orderInCategory="100"
+        android:title="Customer Support"
+        app:showAsAction="never" />
+
+
+</menu>

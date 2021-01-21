@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_refer"
+        android:orderInCategory="100"
+        android:title="Refer &amp; Earn"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_qr"
+        android:orderInCategory="100"
+        android:title="QR Code"
+        android:iconTint="@color/white"
+        android:icon="@mipmap/qr_code"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/shareapp"
+        android:icon="@mipmap/ic_share_icon_white"
+        android:orderInCategory="100"
+        android:title="Share App"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_bugs"
+        android:icon="@mipmap/bug_white_icon"
+        android:orderInCategory="100"
+        android:title="Bug Report"
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/nav_package"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="100"
+        android:title="Prepaid Packages"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_doctors_list"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="100"
+        android:title="Doctors List"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@mipmap/ic_launcher"
+        android:orderInCategory="100"
+        android:title="Search"
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@mipmap/notify"
+        android:orderInCategory="100"
+        android:title="Notifications"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_aboutapp"
+        android:orderInCategory="100"
+        android:title="About App"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/nav_sharemylink"
+        android:orderInCategory="100"
+        android:title="Share My Link"
+        android:visible="false"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/rateapp"
+        android:orderInCategory="100"
+        android:title="Rate App"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/nav_reportissue"
+        android:orderInCategory="100"
+        android:title="Report Issue"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+
+</menu>

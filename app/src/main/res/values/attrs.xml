@@ -1,0 +1,38 @@
+<resources>
+    <declare-styleable name="AppTheme">
+        <attr name="textAppearanceFinish" format="reference" />
+        <attr name="mfp_toolbar_theme" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="InfiniteListView">
+        <attr name="swipeRefreshIndicatorColor" format="color" />
+        <attr name="scrollbarVisible" format="boolean" />
+        <attr name="dividerVisible" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxListView">
+        <attr name="enableZoom" format="boolean" /> <!--default=false-->
+        <attr name="zoomFactor" format="float" /> <!--default=1.0-->
+        <attr name="scrollMultiplier" format="float" /> <!--default=0.5-->
+    </declare-styleable>
+
+
+    <declare-styleable name="SlidingTabLayout">
+        <attr name="indicatorColor" format="color" />
+        <attr name="shouldExpand" format="boolean" />
+        <attr name="tabBackground_new" format="reference" />
+        <attr name="tabBackgroundTextViewId_new" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiSpinnerSearch">
+        <attr name="hintText" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ExpandableLayout">
+        <attr name="expDuration" format="integer|reference"/>
+        <attr name="expWithParentScroll" format="boolean"/>
+        <attr name="expExpandScrollTogether" format="boolean"/>
+    </declare-styleable>
+
+</resources>

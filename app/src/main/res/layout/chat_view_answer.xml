@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|left"
+    android:gravity="center_vertical|left"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/outgoing_new"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvanswer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Reply test chat for the Doctors"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/ans_extra_layout"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    //----------------------="The Probable causes:"----------------
+
+                    <TextView
+                        android:id="@+id/tvt_probcause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="The Probable causes:"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/tv_probcause"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Rest for rheumatoid arthritis, your treatment is going in right direction."
+                        android:textColor="@color/grey_900"
+                        android:textSize="13sp" />
+                    //----------------------="The Probable causes:"----------------
+
+
+                    //----------------------"Investigations to be done:"-----------------
+
+                    <TextView
+                        android:id="@+id/tvt_invdone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Investigations to be done:"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/tv_invdone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Rest for rheumatoid arthritis, your treatment is going in right direction."
+                        android:textColor="@color/grey_900"
+                        android:textSize="13sp" />
+                    //----------------------"Investigations to be done:"-----------------
+
+
+                    //----------------------"Differential diagnosis:"------------------
+
+                    <TextView
+                        android:id="@+id/tvt_diffdiag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Differential diagnosis:"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/tv_diffdiag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Rest for rheumatoid arthritis, your treatment is going in right direction."
+                        android:textColor="@color/grey_900"
+                        android:textSize="13sp" />
+                    //---------------------"Differential diagnosis:"-----------------
+
+
+                    //----------------------"Probable diagnosis"-------------------
+
+                    <TextView
+                        android:id="@+id/tvt_probdiag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Probable diagnosis"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/tv_probdiag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Rest for rheumatoid arthritis, your treatment is going in right direction."
+                        android:textColor="@color/grey_900"
+                        android:textSize="13sp" />
+                    //----------------------"Probable diagnosis"-----------------
+
+
+                    //-----------------------Treatment plan:"------------------
+
+                    <TextView
+                        android:id="@+id/tvt_tratplan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Treatment plan:"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/tv_tratplan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Rest for rheumatoid arthritis, your treatment is going in right direction."
+                        android:textColor="@color/grey_900"
+                        android:textSize="13sp" />
+                    //-----------------------Treatment plan:"------------------
+
+                    //-----------------------Preventive measures--------------------
+
+                    <TextView
+                        android:id="@+id/tvt_prevmeasure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Preventive measures:"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/tv_prevmeasure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Rest for rheumatoid arthritis, your treatment is going in right direction."
+                        android:textColor="@color/grey_900"
+                        android:textSize="13sp" />
+                    //-----------------------Preventive measures--------------------
+
+
+                    //-----------------------Regarding follow up --------------------
+
+                    <TextView
+                        android:id="@+id/tvt_follup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Regarding follow up:"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/tv_follup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:autoLink="all"
+                        android:clickable="true"
+                        android:fontFamily="sans-serif-light"
+                        android:linksClickable="true"
+                        android:text="Rest for rheumatoid arthritis, your treatment is going in right direction."
+                        android:textColor="@color/grey_900"
+                        android:textSize="13sp" />
+
+                    //-----------------------Regarding follow up --------------------
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/prescribe_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <Button
+                                    android:id="@+id/btn_view_prescription"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerInParent="true"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/button_rounded"
+                                    android:gravity="center"
+                                    android:onClick="onclick_viewpres"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:text="View a Prescription"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/white"
+                                    android:visibility="gone" />
+
+                                <Button
+                                    android:id="@+id/btn_write_pres_answer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_toRightOf="@+id/btn_view_prescription"
+                                    android:background="@drawable/button_rounded"
+                                    android:paddingLeft="20dp"
+                                    android:paddingRight="20dp"
+                                    android:text="Write Prescription"
+                                    android:textAllCaps="false"
+                                    android:visibility="gone"
+                                    android:textColor="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/tv_answer_query_id"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:visibility="gone" />
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_pres_comment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="0dp"
+                                android:fontFamily="sans-serif"
+                                android:text="Prescription Attached (Waiting for Approval)"
+                                android:textColor="@color/mds_bluegrey_800"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:visibility="gone" />
+
+                            <LinearLayout
+                                android:id="@+id/file_list"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="right"
+                    android:text="3 hours ago"
+                    android:textColor="@color/grey_900"
+                    android:textSize="11sp"
+                    android:textStyle="normal"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageview_poster"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|right"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:src="@mipmap/meicon"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</LinearLayout>

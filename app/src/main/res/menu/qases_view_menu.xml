@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_postcomment"
+        android:icon="@mipmap/comment_icon_white"
+        android:orderInCategory="100"
+        android:title="Post Comment"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/nav_qshare"
+        android:orderInCategory="100"
+        android:title="Share this Case"
+        android:icon="@mipmap/share_ico_white"
+        app:showAsAction="always" />
+
+</menu>
