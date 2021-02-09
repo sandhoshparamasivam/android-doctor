@@ -7,7 +7,7 @@ android {
     compileSdkVersion project.ext.chimeCompileSdkVersion
     buildToolsVersion project.ext.chimeBuildToolsVersion
 
-    compileSdkVersion 29
+    compileSdkVersion 30
     buildToolsVersion '29.0.2'
 
     compileOptions {
@@ -18,9 +18,9 @@ android {
     defaultConfig {
         applicationId "com.orane.docassist"
         minSdkVersion 21
-        targetSdkVersion 29
-        versionCode 161
-        versionName "2.9.6"
+        targetSdkVersion 30
+        versionCode 162
+        versionName "2.9.7"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         /*  ndk {

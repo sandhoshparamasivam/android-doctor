@@ -22,7 +22,7 @@
         android:layout_height="50dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:scaleType="centerCrop"
+
         android:src="@mipmap/logo1" />
 
 

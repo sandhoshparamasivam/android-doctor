@@ -24,7 +24,7 @@
 
     <ImageView
         android:id="@+id/img_title"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@+id/appBarLayout"
         android:layout_gravity="center"
