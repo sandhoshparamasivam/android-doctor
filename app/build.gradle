@@ -19,8 +19,8 @@ android {
         applicationId "com.orane.docassist"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 162
-        versionName "2.9.7"
+        versionCode 163
+        versionName "2.9.8"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         /*  ndk {
