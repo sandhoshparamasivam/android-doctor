@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.telephony.PhoneNumberUtils;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,14 +34,17 @@ import com.orane.docassist.Model.Model;
 import com.orane.docassist.Network.JSONParser;
 import com.orane.docassist.Network.ShareIntent;
 import com.orane.docassist.R;
+import com.orane.docassist.SettingsActivity;
 import com.orane.docassist.WebViewActivity;
 
 import org.json.JSONObject;
 
+import java.io.IOException;
+
 
 public class SettingsFragment extends Fragment {
 
-    LinearLayout chat_layout, abtus_layout, terms_layout, policy_layout, reportissue_layout, rate_layout, share_layout, aredoctor_layout, pv_consult_layout, contactus_layout, csupport_layout, invite_layout, signout_layout;
+    LinearLayout chat_layout, abtus_layout, invitePatientLyt,terms_layout, policy_layout, reportissue_layout, rate_layout, share_layout, aredoctor_layout, pv_consult_layout, contactus_layout, csupport_layout, invite_layout, signout_layout;
     Switch switch_notisound, switch_stopnoti;
     JSONObject logout_jsonobj, logout_json_validate;
 
@@ -70,6 +74,7 @@ public class SettingsFragment extends Fragment {
         FlurryAgent.onPageView();
 
         chat_layout = (LinearLayout) view.findViewById(R.id.chat_layout);
+        invitePatientLyt = (LinearLayout) view.findViewById(R.id.invitePatientLyt);
         contactus_layout = (LinearLayout) view.findViewById(R.id.contactus_layout);
         csupport_layout = (LinearLayout) view.findViewById(R.id.csupport_layout);
         invite_layout = (LinearLayout) view.findViewById(R.id.invite_layout);
@@ -114,7 +119,22 @@ public class SettingsFragment extends Fragment {
         if (noti_sound_val.equals("on")) switch_notisound.setChecked(true);
         else switch_notisound.setChecked(false);
         //================ Initialize ======================---------------
+        invitePatientLyt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Log.e("invite_Patient_layout","working");
+
+                try {
+                    ShareIntent shareIntent = new ShareIntent();
+                    shareIntent.ShareApp(getActivity(), "InvitePatient");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+
+            }
+        });
         switch_notisound.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {

@@ -66,7 +66,7 @@ public class NewQueriesActivity extends AppCompatActivity {
     ListView listView;
     TextView empty_msgmsg, tv_info;
     JSONObject object, json_response_obj, jsonobj_canisnaswer, json_err_feedback;
-    public String tv_id_val, answering_status, tv_hline_text, str_response, Log_Status, pat_location, str_price, params, prio_text, followcode_text;
+    public String msg,tv_id_val, answering_status, tv_hline_text, str_response, Log_Status, pat_location, str_price, params, prio_text, followcode_text;
     private ProgressBar bar;
     LinearLayout nolayout, netcheck_layout;
     ProgressBar progressBar, progressBar_bottom;
@@ -1106,9 +1106,20 @@ public class NewQueriesActivity extends AppCompatActivity {
 
                     answering_status = jsonobj_canisnaswer.getString("status");
 
+
+
+                    if(jsonobj_canisnaswer.has("msg")) {
+                        msg = jsonobj_canisnaswer.getString("msg");
+
+                    }
+
                     if ((answering_status).equals("0")) {
-                        Toast.makeText(getApplicationContext(), "Sorry! Another doctor has already picked this query.", Toast.LENGTH_LONG).show();
-                    } else {
+                        if (msg!=null){
+                            AlertBoxMethod(msg);
+                        }else
+                            AlertBoxMethod("Sorry! Another doctor has already picked this query.");
+                        }
+                    else {
                         System.out.println("Success----");
 
                         Intent intent = new Intent(NewQueriesActivity.this, NewQueryViewActivity.class);
@@ -1132,6 +1143,23 @@ public class NewQueriesActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    private void AlertBoxMethod(String msg) {
+        final MaterialDialog alert = new MaterialDialog(NewQueriesActivity.this);
+        //alert.setTitle("Error..!");
+        alert.setMessage(msg);
+        alert.setCanceledOnTouchOutside(false);
+        alert.setPositiveButton("OK", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+
+                alert.dismiss();
+                finish();
+            }
+        });
+        alert.show();
     }
 
 

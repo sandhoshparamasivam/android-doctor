@@ -79,7 +79,7 @@ public class AnsweredQueryViewActivity extends AppCompatActivity {
     public static final String sp_km_id = "sp_km_id_key";
     public static final String first_query = "first_query_key";
     public static final String first_hotline = "first_hotline_key";
-    public String strHtml_text, str_drug_dets, answer_files_text, attach_file_text, title_text, fields_text, qtype, query_price_text, pat_from_text, check_enable_ffollowup, answering_status, opt_freefollow, enable_freefollow, isEnablefFollowup, qansby, qcanianswer, html_file_str, followupcode, qitems, regards, msg_text, msg_ext_text, files_text, class_text, time_text;
+    public String strHtml_text, str_drug_dets, answer_files_text, attach_file_text, title_text, fields_text, qtype, query_price_text, pat_from_text, check_enable_ffollowup, answering_status, opt_freefollow, enable_freefollow, isEnablefFollowup,msg, qansby, qcanianswer, html_file_str, followupcode, qitems, regards, msg_text, msg_ext_text, files_text, class_text, time_text;
     public String str_response, ans_followup_text, file_full_url, complaint_more, p_history, c_medications, p_medications, tests, file_user_id, file_doctype, file_file, file_ext;
     public String feedback_id_text, enable_prescription_val, current_answer_id, followup_txt, report_response, feedback_text, rating_text, pat_feedback_text, reply_text, arr_feedback_text, q_comments, extension, age_txt, gender_txt, extra_txt, age_gender_txt, prescribe_value, pb_cause_text, lab_t_text, ddx_text, pdx_text, treatment_plan_text, followup_text, p_tips_text;
     public View vi_ans, vi, vi_files;
@@ -1618,7 +1618,6 @@ public class AnsweredQueryViewActivity extends AppCompatActivity {
                     }
                 } else {
 
-                    answering_status = jsonobj_canisnaswer.getString("status");
 
                /*     opt_freefollow = jsonobj_canisnaswer.getString("opt_freefollow");
                     enable_freefollow = jsonobj_canisnaswer.getString("enable_freefollow");
@@ -1641,8 +1640,19 @@ public class AnsweredQueryViewActivity extends AppCompatActivity {
                     //----------------------------------------------*/
 
                     //----------------------------------------------
+                    answering_status = jsonobj_canisnaswer.getString("status");
+
+                    if(jsonobj_canisnaswer.has("msg")) {
+                        msg = jsonobj_canisnaswer.getString("msg");
+
+                    }
+
                     if ((answering_status).equals("0")) {
-                        Toast.makeText(getApplicationContext(), "Sorry! Another doctor has already picked this query.", Toast.LENGTH_LONG).show();
+                        if (msg!=null){
+                            AlertBoxMethod(msg);
+                        }else{
+                            AlertBoxMethod("Sorry! Another doctor has already picked this query.");
+                        }
                     } else {
                         answer_layout.setVisibility(View.VISIBLE);
                         btn_ansquery.setVisibility(View.GONE);
@@ -1671,7 +1681,21 @@ public class AnsweredQueryViewActivity extends AppCompatActivity {
         }
     }
 
+    private void AlertBoxMethod(String msg_text) {
+        final MaterialDialog alert = new MaterialDialog(this);
+        //alert.setTitle("Error..!");
+        alert.setMessage(msg_text);
+        alert.setCanceledOnTouchOutside(false);
+        alert.setPositiveButton("OK", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alert.dismiss();
+                finish();
+            }
+        });
+        alert.show();
 
+    }
 
 
 }

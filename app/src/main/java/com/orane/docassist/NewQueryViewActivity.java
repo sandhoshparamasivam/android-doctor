@@ -101,7 +101,7 @@ public class NewQueryViewActivity extends AppCompatActivity {
     public static final String photo_url = "photo_url";
     public static final String token = "token_key";
 
-    public String tv_qid_val, str_drug_dets, family_list, followup_txt, current_answer_id, selectedPath, selectedfilename, local_url, last_upload_file, upLoadServerUri, attach_qid, attach_status, attach_file_url, attach_filename, attach_id, upload_response, patient_id, jio_query, track_id_val, str_response, file_full_url, attach_file_text, extension, file_name_only, title_text, fields_text, qtype, query_price_text, pat_from_text, check_enable_ffollowup, answering_status, opt_freefollow, enable_freefollow, prescribe_status, isEnablefFollowup, qansby, qcanianswer, html_file_str, followupcode, qitems, regards, msg_text, msg_ext_text, files_text, class_text, time_text;
+    public String tv_qid_val, str_drug_dets, family_list, followup_txt, current_answer_id, selectedPath, selectedfilename, local_url, last_upload_file, upLoadServerUri, attach_qid, attach_status, attach_file_url, attach_filename, attach_id, upload_response, patient_id, jio_query, track_id_val, str_response, file_full_url, attach_file_text, extension, file_name_only, title_text, fields_text, qtype, query_price_text, pat_from_text, check_enable_ffollowup, msg,answering_status, opt_freefollow, enable_freefollow, prescribe_status, isEnablefFollowup, qansby, qcanianswer, html_file_str, followupcode, qitems, regards, msg_text, msg_ext_text, files_text, class_text, time_text;
     public String has_upload_file_val, has_prescription_val, p_status_val, prescMsg_text, answer_id_val, file_user_id, feedback_text, file_doctype, file_file, file_ext, rating_text, pat_feedback_text, feedback_id_text, reply_text;
     public String serverResponseMessage, contentAsString, answer_files_text, diagnose_prediction_text, age_txt, report_response, arr_feedback_text, gender_txt, age_gender_txt, prescribe_value, enable_prescription_val, lab_t_text, ddx_text, pdx_text, treatment_plan_text, followup_text, p_tips_text;
     public View vi_ans, vi, vi_files;
@@ -1581,6 +1581,21 @@ public class NewQueryViewActivity extends AppCompatActivity {
                 } else {
 
                     answering_status = jsonobj_canisnaswer.getString("status");
+
+
+                    if(jsonobj_canisnaswer.has("msg")) {
+                        msg = jsonobj_canisnaswer.getString("msg");
+
+                    }
+
+                    if ((answering_status).equals("0")) {
+                        if (msg!=null){
+                            AlertBoxMethod(msg);
+                        }else{
+                            AlertBoxMethod("Sorry! Another doctor has already picked this query.");
+                        }
+                    }
+                   
                     opt_freefollow = jsonobj_canisnaswer.getString("opt_freefollow");
                     enable_freefollow = jsonobj_canisnaswer.getString("enable_freefollow");
                     Log.e("enable_freefollow",enable_freefollow+" ");
@@ -1635,6 +1650,9 @@ public class NewQueryViewActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    private void AlertBoxMethod(String msg) {
     }
 
     class JSON_QueryView extends AsyncTask<String, Void, Boolean> {

@@ -20,12 +20,12 @@ import java.util.List;
 
 public class UpcomingConsRowAdapter extends ArrayAdapter<ItemCons> {
 
-    private Activity activity;
+    private Context activity;
     private List<ItemCons> items;
     private ItemCons objBean;
     private int row;
 
-    public UpcomingConsRowAdapter(Activity act, int resource, List<ItemCons> arrayList) {
+    public UpcomingConsRowAdapter(Context act, int resource, List<ItemCons> arrayList) {
         super(act, resource, arrayList);
         this.activity = act;
         this.row = resource;

@@ -59,10 +59,10 @@ public class HomeFragment extends Fragment {
     public HomeFragment() {
     }
 
-    LinearLayout qases_layout, gl_layout, home_row2, home_row1, cons_layout, feedback_layout, queries_layout;
+    LinearLayout qases_layout, prec_layout,gl_layout, home_row2, home_row1, cons_layout, feedback_layout, queries_layout;
     View rootView;
     Typeface font_reg, font_bold;
-    CardView card_educations;
+    CardView card_educations,card_prescription;
     ImageView img_search_logo, img_share_icon;
     String sensappt_home_flag_val, surveyFormUrl_val, str_response, isShowSurvey_val;
     JSONObject json_count;
@@ -121,7 +121,8 @@ public class HomeFragment extends Fragment {
         tvcons = rootView.findViewById(R.id.tvcons);
         tv_wallet_balance = rootView.findViewById(R.id.tv_wallet_balance);
         img_feedback = rootView.findViewById(R.id.img_feedback);
-
+        prec_layout=rootView.findViewById(R.id.prec_layout);
+        card_prescription=rootView.findViewById(R.id.card_prescription);
         fab = rootView.findViewById(R.id.fab);
         // fab = (ExtendedFloatingActionButton) rootView.findViewById(R.id.fab);
 
@@ -140,6 +141,15 @@ public class HomeFragment extends Fragment {
             //force_logout();
         }
 
+        prec_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), WebViewActivity.class);
+                i.putExtra("url", Model.BASE_URL + "/query/prescriptionGuidelineInner");
+                i.putExtra("type", "Prescription Guidelines");
+                startActivity(i);
+            }
+        });
         scroll_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -203,6 +213,10 @@ public class HomeFragment extends Fragment {
         Animation animSlideDown3 = AnimationUtils.loadAnimation(getActivity(), R.anim.bounce3);
         animSlideDown3.setStartOffset(500);
         card_educations.startAnimation(animSlideDown3);
+
+        Animation animSlideDown5 = AnimationUtils.loadAnimation(getActivity(), R.anim.bounce3);
+        animSlideDown3.setStartOffset(500);
+        card_prescription.startAnimation(animSlideDown5);
 
         Animation animSlideDown4 = AnimationUtils.loadAnimation(getActivity(), R.anim.bounce4);
         animSlideDown4.setStartOffset(700);

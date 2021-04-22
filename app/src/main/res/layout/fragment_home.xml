@@ -737,6 +737,90 @@
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_prescription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:elevation="15dp"
+                android:paddingBottom="5dp"
+                app:cardElevation="10dp"
+                card_view:cardCornerRadius="7dp"
+                card_view:contentPadding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:id="@+id/prec_layout"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginRight="25dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Prescription Guidelines"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13dp"
+                        android:gravity="center"
+                        android:textStyle="normal" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/grey_500" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"
+                                android:padding="10dp">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:gravity="center"
+                                    android:text="Check Telemedicine Guidelines before giving a prescription"
+                                    android:textColor="@color/mds_bluegrey_700"
+                                    android:textSize="15dp" />
+
+                            </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View Guidelines"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:background="@color/colorPrimary"
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
             <LinearLayout
                 android:layout_width="match_parent"

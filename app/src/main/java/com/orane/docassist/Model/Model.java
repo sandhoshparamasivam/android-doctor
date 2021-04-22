@@ -13,9 +13,9 @@ import java.util.HashMap;
 
 public class Model {
     
-    public static String app_slno = "163";
-    public static String app_ver = "2.9.8";
-    public static String app_rel = "11-February-2021";
+    public static String app_slno = "167";
+    public static String app_ver = "3.0.2";
+    public static String app_rel = "06-April-2021";
 
     public static String BASE_URL = "https://www.icliniq.com/";
 //    public static String BASE_URL = "https://pentest.icliniq.com/";

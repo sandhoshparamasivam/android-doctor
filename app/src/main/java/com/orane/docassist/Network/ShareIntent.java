@@ -29,7 +29,10 @@ public class ShareIntent {
                 sAux = "I am " + (Model.name) + ". Now available for online consultation at iCliniq. It is #1 online consultation platform. Visit icliniq.com or just download the mobile app on\n\n";
                 sAux = sAux + Uri.parse("https://play.google.com/store/apps/details?id=com.orane.docassist");
             }
-
+          if (actname.equalsIgnoreCase("InvitePatient")) {
+                sAux = "I am " + (Model.name) + ". Now available for online consultation at iCliniq. It is #1 online consultation platform. Visit icliniq.com or just download the mobile app on\n\n";
+                sAux = sAux + Uri.parse("https://play.google.com/store/apps/details?id=com.orane.icliniq&hl=en_US");
+            }
             if (actname.equals("QasesHome")) {
                 sAux = "Discuss medical cases and clinical scenarios with medical doctors of iCliniq. All within Doctor-2-Doctor iCliniq network \n\n";
                 sAux = sAux + Uri.parse("https://www.icliniq.com/discuss-case");

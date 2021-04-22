@@ -94,19 +94,8 @@ public class Unconfirmed_Consult_Fragment extends Fragment {
         mSwipeRefreshLayout = (SwipeRefreshLayout) rootView.findViewById(R.id.swipe_query_new);
         listView = (ListView) rootView.findViewById(R.id.listview);
 
-        try {
-            full_process();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
-        try {
 
-            full_process();
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
 
 /*
         btn_reload.setOnClickListener(new View.OnClickListener() {
@@ -492,5 +481,15 @@ public class Unconfirmed_Consult_Fragment extends Fragment {
             return false;
         }
         return false;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        try {
+            full_process();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -9,28 +9,32 @@ import android.os.Build;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import android.view.View.OnClickListener;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.flurry.android.FlurryAgent;
 
 import com.orane.docassist.Model.Model;
 import com.orane.docassist.Network.ShareIntent;
-import com.orane.docassist.R;
 
-import java.util.HashMap;
+import java.io.IOException;
 
 import me.drakeet.materialdialog.MaterialDialog;
 
 public class SettingsActivity extends AppCompatActivity {
 
 
-    LinearLayout terms_layout, policy_layout, reportissue_layout, rate_layout, share_layout, aredoctor_layout, pv_consult_layout, signout_layout;
+    LinearLayout terms_layout, policy_layout,  reportissue_layout, rate_layout, share_layout, aredoctor_layout, pv_consult_layout, signout_layout;
     Switch switch_notisound, switch_stopnoti;
 
     public String noti_sound_val, stop_noti_val;
@@ -43,6 +47,9 @@ public class SettingsActivity extends AppCompatActivity {
 
     Typeface font_reg, font_bold;
 
+    RelativeLayout lytRelative;
+    ImageView imgPatient;
+    LinearLayout invitePatientLyt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,6 +69,10 @@ public class SettingsActivity extends AppCompatActivity {
         }
         //------------ Object Creations -------------------------------
 
+        //invitePatientLyt =  findViewById(R.id.invitePatientLyt);
+//        lytRelative =  findViewById(R.id.lytRelative);
+//        imgPatient =  findViewById(R.id.imgPatient);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             getWindow().setStatusBarColor(getResources().getColor(R.color.app_color));
         }
@@ -70,6 +81,7 @@ public class SettingsActivity extends AppCompatActivity {
         FlurryAgent.onPageView();
 
 
+        invitePatientLyt = (LinearLayout) findViewById(R.id.invitePatientLyt);
         signout_layout = (LinearLayout) findViewById(R.id.signout_layout);
         terms_layout = (LinearLayout) findViewById(R.id.terms_layout);
         policy_layout = (LinearLayout) findViewById(R.id.policy_layout);
@@ -80,6 +92,7 @@ public class SettingsActivity extends AppCompatActivity {
         pv_consult_layout = (LinearLayout) findViewById(R.id.pv_consult_layout);
         switch_notisound = (Switch) findViewById(R.id.switch_notisound);
         switch_stopnoti = (Switch) findViewById(R.id.switch_stopnoti);
+
 
         font_reg = Typeface.createFromAsset(getApplicationContext().getAssets(), Model.font_name);
         font_bold = Typeface.createFromAsset(getApplicationContext().getAssets(), Model.font_name_bold);
@@ -108,6 +121,35 @@ public class SettingsActivity extends AppCompatActivity {
         if (noti_sound_val.equals("on")) switch_notisound.setChecked(true);
         else switch_notisound.setChecked(false);
         //================ Initialize ======================---------------
+
+
+//        imgPatient.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                    Log.e("invite_Patient_layout","working");
+//                    ShareIntent shareIntent = new ShareIntent();
+//                try {
+//                    shareIntent.ShareApp(SettingsActivity.this, "InvitePatient");
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//
+//
+//            }
+//        });
+
+//        lytPatient.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                    Log.e("invite_Patient_layout","working");
+//
+//
+//
+//            }
+//        });
+
 
         switch_notisound.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -208,6 +250,7 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
+
         aredoctor_layout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -290,5 +333,16 @@ public class SettingsActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void shareApp(View view) {
+
+        ShareIntent shareIntent = new ShareIntent();
+                try {
+                    shareIntent.ShareApp(SettingsActivity.this, "InvitePatient");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+//
     }
 }

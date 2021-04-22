@@ -75,7 +75,7 @@ public class New_queries_Fragment extends Fragment {
     ListView listView;
     TextView empty_msgmsg, tv_info;
     JSONObject object, json_response_obj, jsonobj_canisnaswer, json_err_feedback;
-    public String doctor_id_text,tv_id_val, answering_status, tv_hline_text, str_response, Log_Status, pat_location, str_price, params, prio_text, followcode_text;
+    public String msg,doctor_id_text,tv_id_val, answering_status, tv_hline_text, str_response, Log_Status, pat_location, str_price, params, prio_text, followcode_text;
     private ProgressBar bar;
     ProgressBar progressBar, progressBar_bottom;
     Intent intent;
@@ -1027,9 +1027,20 @@ public class New_queries_Fragment extends Fragment {
 
                     answering_status = jsonobj_canisnaswer.getString("status");
 
+
+                    if(jsonobj_canisnaswer.has("msg")) {
+                        msg = jsonobj_canisnaswer.getString("msg");
+
+                    }
+
                     if ((answering_status).equals("0")) {
-                        Toast.makeText(getActivity(), "Sorry.! Another doctor has picked. You are not allowed to answer this query.", Toast.LENGTH_LONG).show();
-                    } else {
+                        if (msg!=null){
+                            AlertBoxMethod(msg);
+                        }else{
+                            AlertBoxMethod("Sorry! Another doctor has already picked this query.");
+                        }
+                    }
+                    else {
                         System.out.println("Success----");
 
                         Intent intent = new Intent(getActivity(), NewQueryViewActivity.class);
@@ -1053,6 +1064,22 @@ public class New_queries_Fragment extends Fragment {
                 e.printStackTrace();
             }
         }
+    }
+
+    private void AlertBoxMethod(String msg_text) {
+        final MaterialDialog alert = new MaterialDialog(getActivity());
+        //alert.setTitle("Error..!");
+        alert.setMessage(msg_text);
+        alert.setCanceledOnTouchOutside(false);
+        alert.setPositiveButton("OK", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alert.dismiss();
+                getActivity().finish();
+            }
+        });
+        alert.show();
+
     }
 
 

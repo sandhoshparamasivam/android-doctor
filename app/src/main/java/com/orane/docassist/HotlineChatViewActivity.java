@@ -111,7 +111,7 @@ public class HotlineChatViewActivity extends AppCompatActivity {
     TextView tv_furl, tv_ext, tv_answer_query_id,tv_etitle, tv_attach_url, tv_attach_id, tv_userid, tv_filename, tv_pat_name, tv_pat_place, tv_query, tvt_morecomp, tv_morecomp, tvt_prevhist, tv_prevhist, tvt_curmedi, tv_curmedi, tvt_pastmedi, tv_pastmedi, tvt_labtest, tv_labtest, tv_age,tv_gender,tv_datetime;
     TextView tv_answer, tvt_probcause, tv_probcause, tvt_invdone, tv_invdone, tvt_diffdiag, tv_diffdiag, tvt_probdiag, tv_probdiag, tvt_tratplan, tv_tratplan, tvt_prevmeasure, tv_prevmeasure, tvt_follup, tv_follup, tv_datetimeans;
 
-    public String regards, file_user_id, file_doctype, file_file, file_ext, html_file_str, msg_text, files_text, time_text, class_text, qansby, qcanianswer, current_qid, qitems, follouwupcode, pat_name, pat_id, docurl, Doctor_id, selqid, fcode, chat_msg, prep_inv_id, prep_inv_fee, prep_inv_strfee, feedback_status, docname, answer, answerval, status, created_at, question, ratting_val, feedback_text, query_id_val, cur_answer_id, answerval_id, pass, uname, str_status, unpaid_fee, unpaid_invid, unpaid_json_text, str_follow_fee, ftrack_str_status_val, ftrack_str_status, ftrack_fee, ftrack_str, selquery_id;
+    public String regards, file_user_id, file_doctype, file_file, file_ext, html_file_str, msg,msg_text, files_text, time_text, class_text, qansby, qcanianswer, current_qid, qitems, follouwupcode, pat_name, pat_id, docurl, Doctor_id, selqid, fcode, chat_msg, prep_inv_id, prep_inv_fee, prep_inv_strfee, feedback_status, docname, answer, answerval, status, created_at, question, ratting_val, feedback_text, query_id_val, cur_answer_id, answerval_id, pass, uname, str_status, unpaid_fee, unpaid_invid, unpaid_json_text, str_follow_fee, ftrack_str_status_val, ftrack_str_status, ftrack_fee, ftrack_str, selquery_id;
     public String selectedPath, filename, files_List;
 
     SharedPreferences sharedpreferences;
@@ -1967,8 +1967,18 @@ public class HotlineChatViewActivity extends AppCompatActivity {
                     answering_status = jsonobj_canisnaswer.getString("status");
 
                     //----------------------------------------------
+
+                    if(jsonobj_canisnaswer.has("msg")) {
+                        msg = jsonobj_canisnaswer.getString("msg");
+
+                    }
+
                     if ((answering_status).equals("0")) {
-                        Toast.makeText(getApplicationContext(), "Sorry! Another doctor has already picked this query.", Toast.LENGTH_LONG).show();
+                        if (msg!=null){
+                            AlertBoxMethod(msg);
+                        }else{
+                            AlertBoxMethod("Sorry! Another doctor has already picked this query.");
+                        }
                     } else {
                         btn_ansquery.setVisibility(View.GONE);
                         send_message_layout.setVisibility(View.VISIBLE);
@@ -1981,6 +1991,27 @@ public class HotlineChatViewActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
+    }
+
+    private void AlertBoxMethod(String msg_text) {
+        final MaterialDialog alert = new MaterialDialog(HotlineChatViewActivity.this);
+        alert.setMessage(msg_text);
+        alert.setCanceledOnTouchOutside(false);
+        alert.setPositiveButton("OK", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                alert.dismiss();
+                finish();
+            }
+        });
+                          /*  alert.setNegativeButton("No", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    alert.dismiss();
+                                }
+                            });*/
+        alert.show();
+
     }
 
     public void go_back_msg() {
