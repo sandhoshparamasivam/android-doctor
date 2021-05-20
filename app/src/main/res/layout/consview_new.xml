@@ -44,7 +44,6 @@
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/card_view"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -173,7 +172,6 @@
                 </LinearLayout>
 
                 <RelativeLayout
-                    android:id="@+id/call_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -193,7 +191,6 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/btn_startcall"
                             android:layout_width="80dp"
                             android:layout_height="70dp"
                             android:src="@mipmap/start_cons_ico" />
@@ -239,7 +236,6 @@
                         android:visibility="visible">
 
                         <ImageView
-                            android:id="@+id/btn_endcall"
                             android:layout_width="80dp"
                             android:layout_height="70dp"
                             android:src="@mipmap/end_cons_ico" />
@@ -552,7 +548,6 @@
                         android:textSize="16sp" />
 
                     <ImageView
-                        android:id="@+id/img_patient"
                         android:layout_width="250dp"
                         android:layout_height="0.5dip"
                         android:layout_marginTop="5dp"
@@ -798,7 +793,6 @@
 
 
                                 <ImageView
-                                    android:id="@+id/img_arr"
                                     android:layout_width="25dp"
                                     android:layout_height="25dp"
                                     android:layout_alignParentRight="true"

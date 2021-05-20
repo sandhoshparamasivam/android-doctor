@@ -135,7 +135,6 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tv_lastadded_tit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
@@ -163,7 +162,6 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tv_lastlogin_tit"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
@@ -321,7 +319,6 @@
 
 
                         <TextView
-                            android:id="@+id/tv_trans_tit"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -368,7 +365,6 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/tv_ptran_tit"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
@@ -380,7 +376,6 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/tv_ptran_tit_desc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -427,7 +422,6 @@
                                 android:orientation="vertical">
 
                                 <TextView
-                                    android:id="@+id/tv_refer_tit"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
@@ -439,7 +433,6 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/tv_refer_desc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -475,7 +468,6 @@
 
 
                         <TextView
-                            android:id="@+id/tv_pack_tit"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -525,7 +517,6 @@
                                 android:padding="4dp">
 
                                 <TextView
-                                    android:id="@+id/tv_subs_tit"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
@@ -537,7 +528,6 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/tv_subs_tit_desc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -606,7 +596,6 @@
                                 android:padding="4dp">
 
                                 <TextView
-                                    android:id="@+id/tv_offer_tit"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
@@ -618,7 +607,6 @@
                                     android:textStyle="bold" />
 
                                 <TextView
-                                    android:id="@+id/tv_offer_tit_desc"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="5dp"
@@ -723,7 +711,6 @@
                         android:src="@mipmap/email_logo" />
 
                     <TextView
-                        android:id="@+id/text_msg2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -785,7 +772,6 @@
                         android:src="@mipmap/queries_icon_bull" />
 
                     <TextView
-                        android:id="@+id/text_msg"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
@@ -846,7 +832,6 @@
                         android:src="@mipmap/cons_logo_bull" />
 
                     <TextView
-                        android:id="@+id/text_msg4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"

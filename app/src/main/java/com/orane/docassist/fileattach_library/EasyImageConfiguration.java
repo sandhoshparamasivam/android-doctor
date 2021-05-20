@@ -9,7 +9,7 @@ import android.preference.PreferenceManager;
 
 public class EasyImageConfiguration implements Constants {
 
-    private Context context;
+    private final Context context;
 
     EasyImageConfiguration(Context context) {
         this.context = context;

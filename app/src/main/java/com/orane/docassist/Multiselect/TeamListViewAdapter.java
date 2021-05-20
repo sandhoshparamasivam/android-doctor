@@ -44,7 +44,7 @@ public class TeamListViewAdapter extends ArrayAdapter<Team>
             if(myTeamDescription != null)
                 myTeamDescription.setText(item.getTeamName());
             if(myTeamWins != null)
-                myTeamWins.setText("Wins: " + String.valueOf(item.getId()));
+                myTeamWins.setText("Wins: " + item.getId());
         }
         return row;
     }

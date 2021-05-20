@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class SimpleRecyclerAdapter extends RecyclerView.Adapter<SimpleRecyclerAdapter.ViewHolder> {
-    private LayoutInflater mInflater;
-    private ArrayList<String> mItems;
+    private final LayoutInflater mInflater;
+    private final ArrayList<String> mItems;
 
     public SimpleRecyclerAdapter(Context context, ArrayList<String> items) {
         mInflater = LayoutInflater.from(context);

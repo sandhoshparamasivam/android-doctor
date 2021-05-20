@@ -20,10 +20,10 @@ import java.util.List;
 
 public class UnconfirmedConsRowAdapter extends ArrayAdapter<ItemConsUnConfirmed> {
 
-    private Activity activity;
-    private List<ItemConsUnConfirmed> items;
+    private final Activity activity;
+    private final List<ItemConsUnConfirmed> items;
     private ItemConsUnConfirmed objBean;
-    private int row;
+    private final int row;
 
     public UnconfirmedConsRowAdapter(Activity act, int resource, List<ItemConsUnConfirmed> arrayList) {
         super(act, resource, arrayList);
@@ -117,11 +117,11 @@ public class UnconfirmedConsRowAdapter extends ArrayAdapter<ItemConsUnConfirmed>
         }
 
         //-------------------------------------------------------------------------------------
-        if ((objBean.getConsult_type().toString()).equals("Video Consultation")) {
+        if ((objBean.getConsult_type()).equals("Video Consultation")) {
             holder.list_logo.setImageResource(R.mipmap.video_cons_ico_color);
-        } else if ((objBean.getConsult_type().toString()).equals("Phone Consultation")) {
+        } else if ((objBean.getConsult_type()).equals("Phone Consultation")) {
             holder.list_logo.setImageResource(R.mipmap.phone_cons_ico_color);
-        } else if ((objBean.getConsult_type().toString()).equals("Direct Visit")) {
+        } else if ((objBean.getConsult_type()).equals("Direct Visit")) {
             holder.list_logo.setImageResource(R.mipmap.direct_cons_ico);
         } else {
             holder.list_logo.setImageResource(R.mipmap.consult_icon_color);

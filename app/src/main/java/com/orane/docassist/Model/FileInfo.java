@@ -4,11 +4,11 @@ import android.annotation.SuppressLint;
 
  @SuppressLint("DefaultLocale")
  public class FileInfo implements Comparable<FileInfo> {
-     private String name;
-     private String data;
-     private String path;
-     private boolean folder;
-     private boolean parent;
+     private final String name;
+     private final String data;
+     private final String path;
+     private final boolean folder;
+     private final boolean parent;
 
      public FileInfo(String n, String d, String p, boolean folder, boolean parent)
      {

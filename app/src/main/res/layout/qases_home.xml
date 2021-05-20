@@ -33,7 +33,6 @@
                 android:src="@mipmap/logo" />
 
             <LinearLayout
-                android:id="@+id/logo_layout"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toRightOf="@+id/q_logo"
@@ -54,7 +53,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/tv_sub_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"

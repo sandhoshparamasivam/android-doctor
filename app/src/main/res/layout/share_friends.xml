@@ -28,7 +28,6 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -90,7 +89,6 @@
      />
 
     <TextView
-        android:id="@+id/tvinvite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 android:layout_marginTop="20dp"

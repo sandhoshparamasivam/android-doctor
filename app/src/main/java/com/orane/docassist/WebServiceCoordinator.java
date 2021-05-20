@@ -18,7 +18,7 @@ public class WebServiceCoordinator {
     private static final String LOG_TAG = WebServiceCoordinator.class.getSimpleName();
 
     private final Context context;
-    private Listener delegate;
+    private final Listener delegate;
 
     public WebServiceCoordinator(Context context, Listener delegate) {
 
@@ -54,7 +54,7 @@ public class WebServiceCoordinator {
         }));
     }
 
-    public static interface Listener {
+    public interface Listener {
 
         void onSessionConnectionDataReady(String apiKey, String sessionId, String token);
         void onWebServiceCoordinatorError(Exception error);

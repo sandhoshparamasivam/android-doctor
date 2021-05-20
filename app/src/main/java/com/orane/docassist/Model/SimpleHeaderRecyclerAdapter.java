@@ -30,9 +30,9 @@ public class SimpleHeaderRecyclerAdapter extends RecyclerView.Adapter<RecyclerVi
     private static final int VIEW_TYPE_HEADER = 0;
     private static final int VIEW_TYPE_ITEM = 1;
 
-    private LayoutInflater mInflater;
-    private ArrayList<String> mItems;
-    private View mHeaderView;
+    private final LayoutInflater mInflater;
+    private final ArrayList<String> mItems;
+    private final View mHeaderView;
 
     public SimpleHeaderRecyclerAdapter(Context context, ArrayList<String> items, View headerView) {
         mInflater = LayoutInflater.from(context);

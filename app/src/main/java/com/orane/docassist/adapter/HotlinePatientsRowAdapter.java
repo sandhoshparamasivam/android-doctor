@@ -22,10 +22,10 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class HotlinePatientsRowAdapter extends ArrayAdapter<Item> {
 
-    private Activity activity;
-    private List<Item> items;
+    private final Activity activity;
+    private final List<Item> items;
     private Item objBean;
-    private int row;
+    private final int row;
     private Context context;
 
     public HotlinePatientsRowAdapter(Activity act, int resource, List<Item> arrayList) {

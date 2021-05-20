@@ -28,7 +28,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_page_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -59,7 +58,6 @@
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:id="@+id/myhealth_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?android:attr/selectableItemBackground"
@@ -82,7 +80,6 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tv_chat"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
@@ -155,7 +152,6 @@
 
 
             <LinearLayout
-                android:id="@+id/multiselect_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
@@ -168,7 +164,6 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/tv_tit_lang"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -186,7 +181,6 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:id="@+id/tv_lang_spec"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -222,7 +216,6 @@
                             android:visibility="gone">
 
                             <RelativeLayout
-                                android:id="@+id/specialities_layout"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content">
 
@@ -290,7 +283,6 @@
 
 
                     <TextView
-                        android:id="@+id/tv_tit_spec"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -320,7 +312,6 @@
                         android:visibility="gone">
 
                         <TextView
-                            android:id="@+id/tv_lang"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -429,7 +420,6 @@
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:id="@+id/spec_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?android:attr/selectableItemBackground"
@@ -452,7 +442,6 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tv_spec_title"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
@@ -544,7 +533,6 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tv_lang_title"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"

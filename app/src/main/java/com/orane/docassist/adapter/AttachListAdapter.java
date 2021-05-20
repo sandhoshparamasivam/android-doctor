@@ -19,10 +19,10 @@ import java.util.List;
 
 public class AttachListAdapter extends ArrayAdapter<Item> {
 
-    private Activity activity;
-    private List<Item> items;
+    private final Activity activity;
+    private final List<Item> items;
     private Item objBean;
-    private int row;
+    private final int row;
     Typeface noto_reg, noto_bold;
 
     private static final int NOT_SELECTED = -1;

@@ -18,10 +18,10 @@ import java.util.List;
 
 public class NotesAdapter extends ArrayAdapter<Item> {
 
-    private Activity activity;
-    private List<Item> items;
+    private final Activity activity;
+    private final List<Item> items;
     private Item objBean;
-    private int row;
+    private final int row;
     private Context context;
 
     public NotesAdapter(Activity act, int resource, List<Item> arrayList) {

@@ -21,7 +21,6 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/senior_top_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/analytics_bg2"
@@ -51,7 +50,6 @@
                             android:src="@mipmap/logo" />
 
                         <LinearLayout
-                            android:id="@+id/title_logo_layout"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_toRightOf="@+id/q_logo"
@@ -59,7 +57,6 @@
                             android:paddingLeft="7dp">
 
                             <TextView
-                                android:id="@+id/tv_logo_title"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
@@ -71,7 +68,6 @@
                                 android:textStyle="bold" />
 
                             <TextView
-                                android:id="@+id/tv_logo_sub_title"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
@@ -145,7 +141,6 @@
                                     android:orientation="vertical">
 
                                     <LinearLayout
-                                        android:id="@+id/logo_layout"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_toRightOf="@+id/q_logo"
@@ -165,7 +160,6 @@
                                             android:textStyle="bold" />
 
                                         <TextView
-                                            android:id="@+id/tv_sub_title"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_gravity="center_vertical"
@@ -346,7 +340,6 @@
 
 
                                             <TextView
-                                                android:id="@+id/tvqnotify_booking"
                                                 android:layout_width="25dip"
                                                 android:layout_height="25dip"
                                                 android:layout_gravity="top|right"
@@ -363,7 +356,6 @@
                                         </FrameLayout>
 
                                         <TextView
-                                            android:id="@+id/tv_booking_text"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:layout_gravity="center"
@@ -503,7 +495,6 @@
                 android:visibility="gone">
 
                 <LinearLayout
-                    android:id="@+id/home_row"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
@@ -511,7 +502,6 @@
                     android:padding="5dp">
 
                     <LinearLayout
-                        android:id="@+id/item1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -540,7 +530,6 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/item2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
@@ -569,7 +558,6 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/item3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
@@ -599,7 +587,6 @@
 
 
                     <LinearLayout
-                        android:id="@+id/item4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
@@ -629,7 +616,6 @@
 
 
                     <LinearLayout
-                        android:id="@+id/item5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="12dp"
@@ -670,7 +656,6 @@
 
 
             <LinearLayout
-                android:id="@+id/hidden_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -680,7 +665,6 @@
                 android:orientation="horizontal">
 
                 <RelativeLayout
-                    android:id="@+id/wallet_top_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
@@ -1051,7 +1035,6 @@
 
 
             <LinearLayout
-                android:id="@+id/home_row3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -1098,7 +1081,6 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tv_wallet_tit"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
@@ -1109,7 +1091,6 @@
                                 android:textSize="17dp" />
 
                             <TextView
-                                android:id="@+id/tv_wallet_desc"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="3dp"
@@ -1220,7 +1201,6 @@
 
 
                                 <LinearLayout
-                                    android:id="@+id/desc_layout"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"

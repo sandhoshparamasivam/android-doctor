@@ -12,8 +12,8 @@ import com.orane.docassist.R;
 import java.util.ArrayList;
 
 public class CustomAdapter extends BaseAdapter {
-    private  ArrayList<String> data;
-    private LayoutInflater inflater;
+    private final ArrayList<String> data;
+    private final LayoutInflater inflater;
 
     public CustomAdapter(Context context, ArrayList<String> mylist) {
         data = mylist;

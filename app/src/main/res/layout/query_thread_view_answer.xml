@@ -27,7 +27,6 @@
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_view"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -40,14 +39,12 @@
             card_view:contentPadding="5dp">
 
             <LinearLayout
-                android:id="@+id/qns_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:visibility="visible">
 
                 <LinearLayout
-                    android:id="@+id/doc_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
@@ -57,7 +54,6 @@
                     android:visibility="gone">
 
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:id="@+id/doc_photo"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_vertical"
@@ -71,7 +67,6 @@
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/tvdocname"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -82,7 +77,6 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/tvdocspec"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -96,7 +90,6 @@
                             android:textStyle="normal" />
 
                         <TextView
-                            android:id="@+id/tvdocid"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -108,7 +101,6 @@
                             android:visibility="gone" />
 
                         <Button
-                            android:id="@+id/btnaskquery"
                             android:layout_width="wrap_content"
                             android:layout_height="40dp"
                             android:paddingLeft="10dp"
@@ -388,7 +380,6 @@
                             android:visibility="gone" />
 
                         <ImageView
-                            android:id="@+id/img_arr"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_alignParentRight="true"
@@ -459,7 +450,6 @@
 
 
                         <TextView
-                            android:id="@+id/text_ratting1_key"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -492,7 +482,6 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/text_ratting2_key"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -524,7 +513,6 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/text_ratting3_key"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -556,7 +544,6 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/text_ratting4_key"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"

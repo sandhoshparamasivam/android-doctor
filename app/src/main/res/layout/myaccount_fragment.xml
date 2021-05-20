@@ -61,7 +61,6 @@
                         android:src="@mipmap/default_user" />
 
                     <LinearLayout
-                        android:id="@+id/name_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"

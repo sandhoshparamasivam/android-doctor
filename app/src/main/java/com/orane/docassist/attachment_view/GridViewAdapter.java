@@ -18,8 +18,8 @@ import java.util.ArrayList;
 public class GridViewAdapter extends ArrayAdapter<GridItem> {
 
     //private final ColorMatrixColorFilter grayscaleFilter;
-    private Context mContext;
-    private int layoutResourceId;
+    private final Context mContext;
+    private final int layoutResourceId;
     private ArrayList<GridItem> mGridData = new ArrayList<GridItem>();
     public String full_path;
 

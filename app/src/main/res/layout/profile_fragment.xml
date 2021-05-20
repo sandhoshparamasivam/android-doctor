@@ -133,7 +133,6 @@
             android:textStyle="bold" />
 
         <ViewSwitcher
-            android:id="@+id/viewSwitcher"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_marginLeft="5dp"
@@ -141,7 +140,6 @@
             android:layout_weight="1">
 
             <GridView
-                android:id="@+id/gridGallery"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
@@ -155,7 +153,6 @@
                 android:verticalSpacing="-15dp" />
 
             <ImageView
-                android:id="@+id/imgSinglePick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -163,20 +160,17 @@
         </ViewSwitcher>
 
         <LinearLayout
-            android:id="@+id/llBottomContainer"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="5dp">
 
             <Button
-                android:id="@+id/btnGalleryPick"
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
                 android:textColor="@android:color/white" />
 
             <Button
-                android:id="@+id/btnGalleryPickMul"
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"

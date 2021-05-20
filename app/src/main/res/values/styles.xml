@@ -34,22 +34,6 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 
-    <style name="Base.Widget.Design.TabLayout" parent="android:Widget">
-        <item name="tabIndicatorColor">?attr/colorAccent</item>
-        <item name="tabIndicatorHeight">2dp</item>
-        <item name="tabPaddingStart">12dp</item>
-        <item name="tabPaddingEnd">12dp</item>
-        <item name="tabBackground">?attr/selectableItemBackground</item>
-        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
-    </style>
-
-    <style name="Widget.MyApp.ActionBar" parent="Widget.AppCompat.ActionBar">
-        <item name="android:background">@color/primary</item>
-        <item name="theme">@style/ThemeOverlay.MyApp.ActionBar</item>
-        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
-    </style>
-
-
     <!--<style name="MenuButtonsSmall">
         <item name="fab_size">mini</item>
         <item name="fab_colorNormal">@color/app_color</item>
@@ -66,10 +50,6 @@
         <item name="android:paddingLeft">@dimen/list_item_padding</item>
         <item name="android:paddingRight">@dimen/list_item_padding</item>
         <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
-    </style>
-
-    <style name="ThemeFullscreen" parent="AppTheme">
-        <item name="android:windowFullscreen">true</item>
     </style>
 
 

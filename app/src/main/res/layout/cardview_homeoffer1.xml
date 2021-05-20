@@ -18,12 +18,10 @@
         android:orientation="vertical">
 
         <RelativeLayout
-            android:id="@+id/relativeLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:layout_alignParentBottom="true"
@@ -53,7 +51,6 @@
                     android:textSize="18sp" />
 
                 <TextView
-                    android:id="@+id/offer_desc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/offer_title"
@@ -65,7 +62,6 @@
                     android:textSize="13sp" />
 
                 <TextView
-                    android:id="@+id/butt_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"

@@ -286,7 +286,7 @@ class RosterViewFragment : Fragment(),
                 Toast.makeText(
                         context!!,
                         "News user has joined",
-                        Toast.LENGTH_SHORT);
+                        Toast.LENGTH_SHORT)
             }
         }
     }

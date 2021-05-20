@@ -7,7 +7,6 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card_view_join"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardElevation="0dp"

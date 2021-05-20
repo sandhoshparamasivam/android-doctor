@@ -71,9 +71,9 @@ public class Voxeet extends BaseActivity {
     @Bind(R.id.videoOther)
     protected VideoView videoOther;
     int MY_PERMISSIONS_REQUEST_CAMERA = 0;
-    MediaStream stream_array[] = new MediaStream[10];
-    String video_array[] = new String[10];
-    String caller_name[] = new String[10];
+    MediaStream[] stream_array = new MediaStream[10];
+    String[] video_array = new String[10];
+    String[] caller_name = new String[10];
 
 
     LinearLayout users_layout;

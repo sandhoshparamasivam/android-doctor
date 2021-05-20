@@ -16,10 +16,10 @@ import java.util.List;
 
 public class QueryNewDetailAdapter extends ArrayAdapter<Item> {
 
-	private Activity activity;
-	private List<Item> items;
+	private final Activity activity;
+	private final List<Item> items;
 	private Item objBean;
-	private int row;
+	private final int row;
 
 
 

@@ -51,7 +51,7 @@ public class Email_OTPActivity extends AppCompatActivity {
     JSONObject json, request_response_json;
     RelativeLayout ccode_layout;
     Button btn_mob_done;
-    private boolean hasStarted = false;
+    private final boolean hasStarted = false;
     ImageView img_mob_edit;
     RelativeLayout mobno_layout;
     Button btn_ignore;

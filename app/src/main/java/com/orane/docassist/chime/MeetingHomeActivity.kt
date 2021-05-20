@@ -84,9 +84,9 @@ class MeetingHomeActivity : AppCompatActivity() {
 
     private fun joinMeeting() {
 
-        meetingID = conf_name;
-        yourName = cons_user_name;
-        chime_server_url = chime_url_text;
+        meetingID = conf_name
+        yourName = cons_user_name
+        chime_server_url = chime_url_text
 
 /*        meetingID = meetingEditText?.text.toString().trim().replace("\\s+".toRegex(), "+")
         yourName = nameEditText?.text.toString().trim().replace("\\s+".toRegex(), "+")*/

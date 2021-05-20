@@ -63,6 +63,7 @@ import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -696,7 +697,7 @@ public class QaseComment_Post2 extends AppCompatActivity {
 */
     public String convertInputStreamToString(InputStream stream, int length) throws IOException {
         Reader reader = null;
-        reader = new InputStreamReader(stream, "UTF-8");
+        reader = new InputStreamReader(stream, StandardCharsets.UTF_8);
         char[] buffer = new char[length];
         reader.read(buffer);
         return new String(buffer);

@@ -113,11 +113,9 @@ public class SettingsFragment extends Fragment {
         stop_noti_val = sharedpreferences.getString(noti_status, "off");
         noti_sound_val = sharedpreferences.getString(noti_sound, "on");
 
-        if (stop_noti_val.equals("on")) switch_stopnoti.setChecked(true);
-        else switch_stopnoti.setChecked(false);
+        switch_stopnoti.setChecked(stop_noti_val.equals("on"));
 
-        if (noti_sound_val.equals("on")) switch_notisound.setChecked(true);
-        else switch_notisound.setChecked(false);
+        switch_notisound.setChecked(noti_sound_val.equals("on"));
         //================ Initialize ======================---------------
         invitePatientLyt.setOnClickListener(new View.OnClickListener() {
             @Override

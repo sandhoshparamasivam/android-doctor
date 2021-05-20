@@ -138,7 +138,6 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/tv_tith1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-light"
@@ -357,7 +356,6 @@
                             android:visibility="gone" />
 
                         <TextView
-                            android:id="@+id/tv_changetimezone"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical|right"

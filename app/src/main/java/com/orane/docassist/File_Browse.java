@@ -58,6 +58,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -470,7 +471,7 @@ public class File_Browse extends AppCompatActivity {
     public String convertInputStreamToString(InputStream stream) throws IOException {
 
         try {
-            BufferedReader r = new BufferedReader(new InputStreamReader(stream, "UTF-8"));
+            BufferedReader r = new BufferedReader(new InputStreamReader(stream, StandardCharsets.UTF_8));
             total = new StringBuilder();
             String line;
             while ((line = r.readLine()) != null) {

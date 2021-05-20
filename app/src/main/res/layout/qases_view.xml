@@ -97,7 +97,6 @@
                     android:textSize="16sp" />
 
                 <LinearLayout
-                    android:id="@+id/doc_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
@@ -207,7 +206,6 @@
 
 
                         <ImageView
-                            android:id="@+id/img_arr"
                             android:layout_width="25dp"
                             android:layout_height="25dp"
                             android:layout_alignParentRight="true"
@@ -343,7 +341,6 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/post_qases_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="25dp"
@@ -355,7 +352,6 @@
                 android:padding="10dp">
 
                 <TextView
-                    android:id="@+id/tv_ask_tit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"

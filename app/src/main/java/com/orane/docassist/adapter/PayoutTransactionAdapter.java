@@ -17,10 +17,10 @@ import java.util.List;
 
 public class PayoutTransactionAdapter extends ArrayAdapter<Item> {
 
-    private Activity activity;
-    private List<Item> items;
+    private final Activity activity;
+    private final List<Item> items;
     private Item objBean;
-    private int row;
+    private final int row;
 
     private static final int NOT_SELECTED = -1;
     private int selectedPos = NOT_SELECTED;

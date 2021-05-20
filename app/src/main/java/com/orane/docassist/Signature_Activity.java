@@ -41,7 +41,7 @@ import java.io.OutputStreamWriter;
 public class Signature_Activity extends Activity {
 
     private static final int REQUEST_EXTERNAL_STORAGE = 1;
-    private static String[] PERMISSIONS_STORAGE = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
+    private static final String[] PERMISSIONS_STORAGE = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
     private SignaturePad mSignaturePad;
     private Button mClearButton, mSaveButton;
     String upload_response, last_upload_file, contentAsString;
@@ -111,7 +111,7 @@ public class Signature_Activity extends Activity {
 
     @Override
     public void onRequestPermissionsResult(int requestCode,
-                                           @NonNull String permissions[], @NonNull int[] grantResults) {
+                                           @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch (requestCode) {
             case REQUEST_EXTERNAL_STORAGE: {
                 // If request is cancelled, the result arrays are empty.

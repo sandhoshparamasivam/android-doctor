@@ -42,7 +42,6 @@
                         android:src="@mipmap/logo" />
 
                     <LinearLayout
-                        android:id="@+id/logo_layout"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_toRightOf="@+id/q_logo"
@@ -63,7 +62,6 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/tv_sub_title"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
@@ -197,7 +195,6 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/captionTitleView"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="3dp"
@@ -214,7 +211,6 @@
                                 android:background="@color/white" />
 
                             <TextView
-                                android:id="@+id/captionTextView"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="3dp"
@@ -639,7 +635,6 @@
 
 
             <LinearLayout
-                android:id="@+id/home_row3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -687,7 +682,6 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tv_wallet_tit"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
@@ -698,7 +692,6 @@
                                 android:textSize="17dp" />
 
                             <TextView
-                                android:id="@+id/tv_wallet_desc"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="3dp"
@@ -893,7 +886,6 @@
 
 
                                 <LinearLayout
-                                    android:id="@+id/desc_layout"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"

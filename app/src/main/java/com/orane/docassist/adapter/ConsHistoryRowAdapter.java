@@ -21,10 +21,10 @@ import java.util.List;
 
 public class ConsHistoryRowAdapter extends ArrayAdapter<ItemCons> {
 
-    private Activity activity;
-    private List<ItemCons> items;
+    private final Activity activity;
+    private final List<ItemCons> items;
     private ItemCons objBean;
-    private int row;
+    private final int row;
 
     public ConsHistoryRowAdapter(Activity act, int resource, List<ItemCons> arrayList) {
         super(act, resource, arrayList);

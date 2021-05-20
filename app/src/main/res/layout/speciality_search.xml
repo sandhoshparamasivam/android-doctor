@@ -119,7 +119,6 @@
             android:stretchColumns="*">
 
             <TableRow
-                android:id="@+id/tableRow1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="3dp">
@@ -153,7 +152,6 @@
                                 android:src="@mipmap/gyneocology_icon" />
 
                             <TextView
-                                android:id="@+id/tv_gridtext1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
@@ -200,7 +198,6 @@
 
 
                             <TextView
-                                android:id="@+id/tv_gridtext2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
@@ -261,7 +258,6 @@
 
 
                             <TextView
-                                android:id="@+id/tv_gridtext3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
@@ -275,7 +271,6 @@
                         </LinearLayout>
 
                         <TextView
-                            android:id="@+id/tv_icon_newc"
                             android:layout_width="25dip"
                             android:layout_height="25dip"
                             android:layout_gravity="top|right"
@@ -297,7 +292,6 @@
 
 
             <TableRow
-                android:id="@+id/tableRow2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="3dp">
@@ -331,7 +325,6 @@
                                 android:src="@mipmap/gyn_icon" />
 
                             <TextView
-                                android:id="@+id/tv_gridtext4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
@@ -390,7 +383,6 @@
 
 
                             <TextView
-                                android:id="@+id/tv_gridtext5"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
@@ -452,7 +444,6 @@
 
 
                             <TextView
-                                android:id="@+id/tv_gridtext6"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
@@ -488,7 +479,6 @@
 
 
             <TableRow
-                android:id="@+id/tableRow3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="3dp">
@@ -522,7 +512,6 @@
                                 android:src="@mipmap/psychrist_icon" />
 
                             <TextView
-                                android:id="@+id/tv_gridtext7"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
@@ -581,7 +570,6 @@
 
 
                             <TextView
-                                android:id="@+id/tv_gridtext8"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"
@@ -629,7 +617,6 @@
 
 
                             <TextView
-                                android:id="@+id/tv_gridtext9"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="5dp"

@@ -12,7 +12,6 @@
         android:background="?android:attr/selectableItemBackground">
 
         <LinearLayout
-            android:id="@+id/hor_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"

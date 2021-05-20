@@ -23,7 +23,7 @@ public class FileLoader extends AsyncTaskLoader<List<File>> {
 	private FileObserver mFileObserver;
 
 	private List<File> mData;
-	private String mPath;
+	private final String mPath;
 
 	public FileLoader(Context context, String path) {
 		super(context);

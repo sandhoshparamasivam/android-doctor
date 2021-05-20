@@ -20,10 +20,10 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class InboxListAdapter extends ArrayAdapter<Item> {
 
-    private Activity activity;
-    private List<Item> items;
+    private final Activity activity;
+    private final List<Item> items;
     private Item objBean;
-    private int row;
+    private final int row;
 
     public InboxListAdapter(Activity act, int resource, List<Item> arrayList) {
         super(act, resource, arrayList);

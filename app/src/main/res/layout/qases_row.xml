@@ -90,7 +90,6 @@
                 android:visibility="visible" />
 
             <LinearLayout
-                android:id="@+id/main_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
@@ -176,7 +175,6 @@
                     android:visibility="gone">
 
                     <ImageView
-                        android:id="@+id/like_butt"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"
@@ -184,7 +182,6 @@
                         android:src="@mipmap/like_grey" />
 
                     <ImageView
-                        android:id="@+id/like_butt_fill"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
                         android:layout_gravity="center_vertical"

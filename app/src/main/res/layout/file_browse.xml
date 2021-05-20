@@ -168,7 +168,6 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/tv_compmore"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -275,14 +274,12 @@
             android:textSize="15sp" />
 
         <RadioGroup
-            android:id="@+id/radio_group"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/activity_horizontal_margin"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/basic_holder_radio_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -291,7 +288,6 @@
                 android:textColor="@android:color/black" />
 
             <RadioButton
-                android:id="@+id/list_holder_radio_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -300,7 +296,6 @@
                 android:textColor="@android:color/black" />
 
             <RadioButton
-                android:id="@+id/grid_holder_radio_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -324,7 +319,6 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/header_check_box"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true" />
@@ -345,7 +339,6 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/footer_check_box"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false" />
@@ -366,7 +359,6 @@
                 android:orientation="horizontal">
 
                 <CheckBox
-                    android:id="@+id/expanded_check_box"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="false" />
@@ -386,21 +378,18 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button_bottom"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="button_bottom" />
 
             <Button
-                android:id="@+id/button_center"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="button_center" />
 
             <Button
-                android:id="@+id/button_top"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -431,7 +420,6 @@
             android:textStyle="bold" />
 
         <ViewSwitcher
-            android:id="@+id/viewSwitcher"
             android:layout_width="fill_parent"
             android:layout_height="0dp"
             android:layout_marginLeft="5dp"
@@ -439,7 +427,6 @@
             android:layout_weight="1">
 
             <GridView
-                android:id="@+id/gridGallery"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="top"
@@ -454,7 +441,6 @@
                 tools:listitem="@layout/gallery_item" />
 
             <ImageView
-                android:id="@+id/imgSinglePick"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -463,14 +449,12 @@
         </ViewSwitcher>
 
         <LinearLayout
-            android:id="@+id/llBottomContainer"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="5dp">
 
             <Button
-                android:id="@+id/btnGalleryPick"
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
                 android:background="@color/menu_bg"
@@ -478,7 +462,6 @@
                 android:textColor="@android:color/white" />
 
             <Button
-                android:id="@+id/btnGalleryPickMul"
                 android:layout_width="fill_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="5dp"

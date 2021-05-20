@@ -399,8 +399,7 @@ public class HotlineHome extends AppCompatActivity {
 
         try {
             if ((Model.status_val) != null && !(Model.status_val).isEmpty() && !(Model.status_val).equals("null") && !(Model.status_val).equals("")) {
-                if ((Model.status_val).equals("1")) switch_hl_enable.setChecked(true);
-                else switch_hl_enable.setChecked(false);
+                switch_hl_enable.setChecked((Model.status_val).equals("1"));
             }
         } catch (Exception e) {
             e.printStackTrace();

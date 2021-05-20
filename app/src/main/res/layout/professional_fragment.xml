@@ -177,7 +177,6 @@
                     android:paddingLeft="10dp">
 
                     <RelativeLayout
-                        android:id="@+id/myhealth_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="?android:attr/selectableItemBackground"
@@ -204,7 +203,6 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tv_chat"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
@@ -298,7 +296,6 @@
 
 
                 <LinearLayout
-                    android:id="@+id/linkedin_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -338,7 +335,6 @@
 
 
                 <LinearLayout
-                    android:id="@+id/fb_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -376,7 +372,6 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/tw_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"

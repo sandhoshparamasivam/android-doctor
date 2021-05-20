@@ -305,6 +305,8 @@ public class UpcomingConsView extends AppCompatActivity implements Constants, Me
                 //------------------------- Url Pass -------------------------
                 url = Model.BASE_URL + "sapp/jsonviewconsult4doc?user_id=" + (Model.id) + "&id=" + consid + "&token=" + Model.token;
                 System.out.println("Cond View url------" + url);
+//                Log.e(" Full URL",url+" ");
+//                Log.e(" Full BASE_URL",Model.BASE_URL +" ");
                 new JSON_ViewCons().execute(url);
                 //------------------------- Url Pass -------------------------
 
@@ -334,7 +336,6 @@ public class UpcomingConsView extends AppCompatActivity implements Constants, Me
             }
         });
         //-------- Auto Scroll to UP------------------
-
 
         //--------------------------------- Phone Call Start -------------------------------------------------
         btn_start_phone_cons.setOnClickListener(new View.OnClickListener() {
@@ -1672,15 +1673,17 @@ public class UpcomingConsView extends AppCompatActivity implements Constants, Me
                         }*/
 
                     } else if (vendor_text.equals("4")) {
+//                        Log.e("url",url+" ");
+//                        Log.e("open_url_text",open_url_text+" ");
                         if (open_url_text != null && !open_url_text.isEmpty() && !open_url_text.equals("null") && !open_url_text.equals("")) {
                             System.out.println("Open with WebRtc SDK------------" + open_url_text);
                             try {
 
                                 Uri uri = Uri.parse("googlechrome://navigate?url=" + open_url_text);
                                 Intent i = new Intent(Intent.ACTION_VIEW, uri);
-                                if (i.resolveActivity(getPackageManager()) == null) {
-                                    i.setData(Uri.parse(url));
-                                }
+//                                if (i.resolveActivity(getPackageManager()) == null) {
+//                                    i.setData(Uri.parse(url));
+//                                }
 
                                 startActivity(i);
 
@@ -1695,12 +1698,11 @@ public class UpcomingConsView extends AppCompatActivity implements Constants, Me
                             System.out.println("Open with WebRtc SDK------------" + open_url_text);
 
                             try {
-
                                 Uri uri = Uri.parse("googlechrome://navigate?url=" + open_url_text);
                                 Intent i = new Intent(Intent.ACTION_VIEW, uri);
-                                if (i.resolveActivity(getPackageManager()) == null) {
-                                    i.setData(Uri.parse(url));
-                                }
+//                                if (i.resolveActivity(getPackageManager()) == null) {
+//                                    i.setData(Uri.parse(url));
+//                                }
 
                                 startActivity(i);
 
@@ -2544,10 +2546,10 @@ public class UpcomingConsView extends AppCompatActivity implements Constants, Me
         //------------------------- Url Pass -------------------------
         url = Model.BASE_URL + "sapp/jsonviewconsult4doc?user_id=" + (Model.id) + "&id=" + consid + "&token=" + Model.token;
         System.out.println("Cond View url------" + url);
+//        Log.e(" Full URL",url+" ");
+//        Log.e(" Full BASE_URL",Model.BASE_URL +" ");
         new JSON_ViewCons().execute(url);
         //------------------------- Url Pass -------------------------
-
-
 
     }
 

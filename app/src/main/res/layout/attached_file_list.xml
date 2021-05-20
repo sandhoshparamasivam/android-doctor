@@ -27,7 +27,6 @@
             android:visibility="gone" />
 
         <TextView
-            android:id="@+id/tv_fname_only"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
@@ -70,7 +69,6 @@
                 android:src="@mipmap/view_color" />
 
             <TextView
-                android:id="@+id/tv_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"

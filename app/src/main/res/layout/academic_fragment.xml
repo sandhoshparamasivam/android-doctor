@@ -30,7 +30,6 @@
                     android:padding="15dp">
 
                     <TextView
-                        android:id="@+id/tv_page_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
@@ -61,7 +60,6 @@
                             android:orientation="vertical">
 
                             <RelativeLayout
-                                android:id="@+id/myhealth_layout"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="?android:attr/selectableItemBackground"
@@ -125,13 +123,11 @@
 
 
                     <LinearLayout
-                        android:id="@+id/certificates_layout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
                         <TextView
-                            android:id="@+id/tv_cert_title"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
@@ -221,7 +217,6 @@
                         app:met_floatingLabel="highlight" />
 
                     <TextView
-                        android:id="@+id/tv_tit_awards"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -270,7 +265,6 @@ sdfj sldfsldflsdflsdlf sdf skldflksdf "
                     </RelativeLayout>
 
                     <TextView
-                        android:id="@+id/tv_tit_lang"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -289,7 +283,6 @@ sdfj sldfsldflsdflsdlf sdf skldflksdf "
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:id="@+id/tv_lang_spec"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -432,7 +425,6 @@ sdfj sldfsldflsdflsdlf sdf skldflksdf "
 
 
                     <TextView
-                        android:id="@+id/tv_tit_spec"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
@@ -451,7 +443,6 @@ sdfj sldfsldflsdflsdlf sdf skldflksdf "
                         android:layout_marginTop="5dp">
 
                         <TextView
-                            android:id="@+id/tv_lang"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="5dp"
@@ -523,7 +514,6 @@ sdfj sldfsldflsdflsdlf sdf skldflksdf "
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/edu_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -554,7 +544,6 @@ sdfj sldfsldflsdflsdlf sdf skldflksdf "
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tv_edu"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"
@@ -589,7 +578,6 @@ sdfj sldfsldflsdflsdlf sdf skldflksdf "
 
 
                 <LinearLayout
-                    android:id="@+id/cert_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -620,7 +608,6 @@ sdfj sldfsldflsdflsdlf sdf skldflksdf "
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/tv_cert"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_vertical"

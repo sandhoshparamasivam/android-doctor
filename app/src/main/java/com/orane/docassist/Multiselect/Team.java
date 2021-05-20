@@ -1,8 +1,8 @@
 package com.orane.docassist.Multiselect;
 
 public class Team {
-    private String teamName;
-    private String id;
+    private final String teamName;
+    private final String id;
 
     public  Team(String name, String id_val)
     {
